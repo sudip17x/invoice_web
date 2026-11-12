@@ -1,0 +1,31 @@
+/* Invoice App - layout and small overrides on top of Bootstrap 5 */
+body { background: #f4f6f9; }
+
+.app-sidebar { width: 230px; min-height: 100vh; background: #1f2a44; }
+.app-sidebar .brand { color: #fff; font-weight: 700; letter-spacing: .5px; }
+.app-sidebar .nav-link { color: #c7cfe2; border-radius: .375rem; padding: .55rem .9rem; }
+.app-sidebar .nav-link:hover { background: rgba(255, 255, 255, .08); color: #fff; }
+.app-sidebar .nav-link.active { background: #3b5bdb; color: #fff; }
+.app-main { min-width: 0; }
+
+.stat-card { border: 0; border-left: 4px solid #3b5bdb; }
+.stat-card.paid { border-left-color: #2f9e44; }
+.stat-card.unpaid { border-left-color: #f08c00; }
+.stat-card.overdue { border-left-color: #e03131; }
+.stat-card .value { font-size: 1.6rem; font-weight: 700; }
+
+.table thead th { white-space: nowrap; }
+.table-items input, .table-items select { min-width: 80px; }
+.table-items .col-desc { min-width: 240px; }
+.line-total { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.login-wrap { max-width: 400px; margin: 8vh auto; }
+
+/* CI4 default_full pager -> Bootstrap look (no Config\Pager change needed) */
+nav ul.pagination { display: flex; flex-wrap: wrap; gap: .25rem; padding-left: 0; list-style: none; margin: 0; }
+nav ul.pagination li a {
+  display: block; padding: .35rem .7rem; border: 1px solid #dee2e6; border-radius: .375rem;
+  background: #fff; color: #3b5bdb; text-decoration: none;
+}
+nav ul.pagination li.active a { background: #3b5bdb; border-color: #3b5bdb; color: #fff; }
+nav ul.pagination li a:hover { background: #e9ecef; }

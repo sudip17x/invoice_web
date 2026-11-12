@@ -1,0 +1,191 @@
+ERROR - 2026-11-09 04:39:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'invoice_db' in C:\laragon\www\test\system\Database\MySQLi\Connection.php:210
+Stack trace:
+#0 C:\laragon\www\test\system\Database\MySQLi\Connection.php(210): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'invoice_db', 3306, '', 0)
+#1 C:\laragon\www\test\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\test\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\test\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\test\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\test\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\test\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\test\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\test\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#9 C:\laragon\www\test\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\laragon\www\test\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\laragon\www\test\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\laragon\www\test\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 C:\laragon\www\test\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\laragon\www\test\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'invoice_db' in C:\laragon\www\test\system\Database\MySQLi\Connection.php:240
+Stack trace:
+#0 C:\laragon\www\test\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\test\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\test\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\test\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\test\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\test\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\test\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\test\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#8 C:\laragon\www\test\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\laragon\www\test\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\laragon\www\test\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\laragon\www\test\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 C:\laragon\www\test\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\laragon\www\test\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+ERROR - 2026-11-09 04:39:39 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'invoice_db' in C:\laragon\www\test\system\Database\MySQLi\Connection.php:210
+Stack trace:
+#0 C:\laragon\www\test\system\Database\MySQLi\Connection.php(210): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'invoice_db', 3306, '', 0)
+#1 C:\laragon\www\test\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\test\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\test\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\laragon\www\test\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\laragon\www\test\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\laragon\www\test\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\laragon\www\test\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\test\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#9 C:\laragon\www\test\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#10 C:\laragon\www\test\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#11 C:\laragon\www\test\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run('migrate', Array)
+#12 C:\laragon\www\test\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#13 C:\laragon\www\test\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\laragon\www\test\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'invoice_db' in C:\laragon\www\test\system\Database\MySQLi\Connection.php:240
+Stack trace:
+#0 C:\laragon\www\test\system\Database\BaseConnection.php(549): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\test\system\Database\BaseConnection.php(815): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\test\system\Database\BaseConnection.php(1732): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\laragon\www\test\system\Database\BaseConnection.php(1752): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\laragon\www\test\system\Database\MigrationRunner.php(831): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\laragon\www\test\system\Database\MigrationRunner.php(173): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\laragon\www\test\system\Commands\Database\Migrate.php(89): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\laragon\www\test\system\CLI\SignalTrait.php(243): CodeIgniter\Commands\Database\Migrate::{closure:CodeIgniter\Commands\Database\Migrate::run():88}()
+#8 C:\laragon\www\test\system\Commands\Database\Migrate.php(88): CodeIgniter\Commands\Database\Migrate->withSignalsBlocked(Object(Closure))
+#9 C:\laragon\www\test\system\CLI\Commands.php(72): CodeIgniter\Commands\Database\Migrate->run(Array)
+#10 C:\laragon\www\test\system\CLI\Console.php(45): CodeIgniter\CLI\Commands->run('migrate', Array)
+#11 C:\laragon\www\test\system\Boot.php(444): CodeIgniter\CLI\Console->run()
+#12 C:\laragon\www\test\system\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#13 C:\laragon\www\test\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#14 {main}
+INFO - 2026-11-09 04:41:02 --> REDIRECTED ROUTE at http://localhost:8080/dashboard
+DEBUG - 2026-11-09 04:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 04:50:03 --> CSRF token verified.
+DEBUG - 2026-11-09 04:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 04:50:31 --> CSRF token verified.
+DEBUG - 2026-11-09 04:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 04:51:08 --> CSRF token verified.
+DEBUG - 2026-11-09 04:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 04:55:46 --> CSRF token verified.
+DEBUG - 2026-11-09 04:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 04:58:14 --> CSRF token verified.
+DEBUG - 2026-11-09 04:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 04:58:23 --> CSRF token verified.
+DEBUG - 2026-11-09 04:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 04:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 05:03:05 --> CSRF token verified.
+DEBUG - 2026-11-09 05:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 05:03:21 --> CSRF token verified.
+DEBUG - 2026-11-09 05:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 05:14:17 --> CSRF token verified.
+DEBUG - 2026-11-09 05:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 05:42:55 --> CSRF token verified.
+DEBUG - 2026-11-09 05:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-11-09 05:45:21 --> Duplicate entry '1' for key 'settings.user_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (:user_id:, :company_name:, :address:, :phone:, :email:, :tax_id:, :bank_details:, :invoice_prefix:, :footer_note:)', [...], false)
+ 5 APPPATH\Database\Seeds\SampleDataSeeder.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\SampleDataSeeder->run()
+ 7 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\SampleDataSeeder')
+ 8 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([])
+ 9 SYSTEMPATH\CLI\Console.php(45): CodeIgniter\CLI\Commands->run('db:seed', [...])
+10 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+11 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+12 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-11-09 05:46:39 --> Duplicate entry '1' for key 'settings.user_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (:user_id:, :company_name:, :address:, :phone:, :email:, :tax_id:, :bank_details:, :invoice_prefix:, :footer_note:)', [...], false)
+ 5 APPPATH\Database\Seeds\SampleDataSeeder.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\SampleDataSeeder->run()
+ 7 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\SampleDataSeeder')
+ 8 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([])
+ 9 SYSTEMPATH\CLI\Console.php(45): CodeIgniter\CLI\Commands->run('db:seed', [...])
+10 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+11 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+12 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2026-11-09 05:57:27 --> Duplicate entry '1' for key 'settings.user_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 316.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(316): mysqli->query('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(928): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(845): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (1, \'Demo Company Pvt Ltd\', \'12 Park Street\\nKolkata, West Bengal 700016\', \'+91 90000 00000\', \'billing@demo.example\', \'19ABCDE1234F1Z5\', \'Demo Bank\\nA/C: 0000 0000 0000\\nIFSC: DEMO0000001\', \'INV\', \'Thank you for your business.\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2362): CodeIgniter\Database\BaseConnection->query('INSERT INTO `settings` (`user_id`, `company_name`, `address`, `phone`, `email`, `tax_id`, `bank_details`, `invoice_prefix`, `footer_note`) VALUES (:user_id:, :company_name:, :address:, :phone:, :email:, :tax_id:, :bank_details:, :invoice_prefix:, :footer_note:)', [...], false)
+ 5 APPPATH\Database\Seeds\SampleDataSeeder.php(23): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 SYSTEMPATH\Database\Seeder.php(155): App\Database\Seeds\SampleDataSeeder->run()
+ 7 SYSTEMPATH\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Seeds\\SampleDataSeeder')
+ 8 SYSTEMPATH\CLI\Commands.php(72): CodeIgniter\Commands\Database\Seed->run([])
+ 9 SYSTEMPATH\CLI\Console.php(45): CodeIgniter\CLI\Commands->run('db:seed', [...])
+10 SYSTEMPATH\Boot.php(444): CodeIgniter\CLI\Console->run()
+11 SYSTEMPATH\Boot.php(166): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+12 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-11-09 05:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 05:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 06:34:51 --> CSRF token verified.
+DEBUG - 2026-11-09 06:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 06:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 06:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 06:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 06:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 06:35:17 --> CSRF token verified.
+DEBUG - 2026-11-09 06:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 06:35:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 06:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-11-09 09:43:40 --> CSRF token verified.
+DEBUG - 2026-11-09 09:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:43:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:44:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-11-09 09:45:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
